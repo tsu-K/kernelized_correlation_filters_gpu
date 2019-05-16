@@ -170,7 +170,7 @@ void KCFTargetTracking::screenPtCB(
     std::cout << "INIT SIZE: " << screen_rect_  << "\n";
     if (width > this->block_size_ && height > this->block_size_) {
        this->tracker_init_ = true;
-       this->sub_screen_pt_.shutdown();
+       //this->sub_screen_pt_.shutdown();
     } else {
        ROS_WARN("-- Selected Object Size is too small... Not init tracker");
     }
